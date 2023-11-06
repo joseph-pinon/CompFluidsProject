@@ -16,6 +16,8 @@ finHeight = 10
 baseHeight = 1
 depth = 10
 
+heatGeneration = 50 #W
+
 Nx = int(Lx/dx) + 1
 Ny = int(Ly/dy) + 1
 numTimesteps = int(tmax/dt)
@@ -28,6 +30,8 @@ maskMap = fins.GenerateFins(maskMap, Lx, Ly, Nx, Ny, dx, dy, finWidth, finGap, f
 fins.VisualizeFins(np.flip(np.fliplr(maskMap)), Lx, Ly, 0, finHeight)
 
 ###############################################################
+
+
 
 
 
